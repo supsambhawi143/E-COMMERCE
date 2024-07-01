@@ -1,0 +1,111 @@
+.collection-slot-title  h2{
+
+        font-family: "Times New Roman", Times, serif;
+        text-align: center;
+        text-transform: uppercase;
+        background-color: #00ADB5;
+        padding: 10px;
+        margin: 0 auto;
+        border-radius: 12px 12px 12px 12px;
+        font-size: 35px;
+        color: black;
+}
+
+.checkout-step {
+    margin-bottom: 30px;
+}
+
+.checkout-step-heading {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #007bff;
+}
+
+.checkout-step-desc {
+    margin-bottom: 20px;
+    color: #6c757d;
+}
+
+.checkout-step-sub {
+    margin-bottom: 30px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #555;
+}
+
+select, input[type="radio"], input[type="submit"] {
+    margin-bottom: 15px;
+}
+
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+    font-size: 1em;
+    color: #495057;
+    transition: border-color 0.3s ease;
+}
+
+select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+input[type="submit"] {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+input[type="submit"].primary-btn {
+    background-color: #007bff;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.input-error {
+    color: red;
+    font-size: 0.9em;
+    margin-top: -10px;
+}
+
+.checkout-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.checkout-buttons input[type="submit"] {
+    width: 48%;
+}
+
+.checkout-step-sub label input {
+    margin-right: 8px;
+}
+
+input[type="submit"].primary-btn {
+    background-color: #28a745;
+}
+
+input[type="submit"].primary-btn:hover {
+    background-color: #218838;
+}

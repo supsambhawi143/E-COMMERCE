@@ -1,0 +1,99 @@
+.shop-page-title h2 {
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #00ADB5;
+  padding: 10px;
+  border-radius: 12px 12px 0px 0px;
+  font-size: 35px;
+  color: black;
+}
+
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjusted minmax value */
+  grid-gap: 20px;
+}
+
+.best-p1 {
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: rgb(9, 212, 9) 0px 0px 10px;
+  position: relative; /* Relative positioning for button placement */
+  height: 45vh;
+}
+
+.best-p1:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  transition: 0.4s;
+}
+
+.best-p1 img {
+  width: 100%; /* Make the image responsive */
+  height: 50%; /* Ensure aspect ratio is maintained */
+}
+
+.best-p1-txt {
+  padding: 10px;
+}
+
+.category-filter select {
+  padding: 5px;
+  margin: 10px 0;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  font: 1em sans-serif;
+}
+
+.name-of-p p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.rating {
+  color: rgb(255, 187, 0);
+}
+
+.price {
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.buy-now {
+  position: absolute; /* Position the button container */
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 20px); /* Adjust width */
+  display: flex;
+  justify-content: space-between; /* Distribute buttons evenly */
+  gap: 10px;
+}
+
+.buy-now button {
+  flex: 1; /* Each button takes equal space */
+  background-color: #ff8800;
+  color: #fff;
+  border: none;
+  padding: 10px 0;
+  cursor: pointer;
+  border-radius: 5px;
+  font: 0.9em sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+.buy-now button i {
+  font-size: 1.5em;
+}
+
+.buy-now button:hover {
+  background-color: #59c288;
+}
+
+@media (max-width: 700px) {
+  .product-container {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjusted minmax value */
+  }
+}
